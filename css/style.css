@@ -1,33 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font: 14px/1.5 Arial, Helvetica, sans-serif;
 }
 
 body {
-    font: 14px/1.5 Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
     background-color: #f0ced0;
-    box-sizing: border-box;
 }
 
 i {
     margin: 5px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    border-radius: 9px;
-}
-
-.container {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
 }
 
 nav {
@@ -37,15 +20,67 @@ nav {
     right: 0;
     z-index: 99;
     background-color: #f0ced0;
-    padding: 16px 32px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    color: black;
     border-bottom: 2px solid olive;
+    cursor: pointer;
 }
 
-nav a {
+
+/* nav a {
     text-align: center;
     padding: 12px;
-    text-decoration: none;
     font-size: 13px;
     line-height: 25px;
     border-radius: 4px;
+} */
+
+nav h1 {
+    font-family: 'Satisfy', cursive;
+    letter-spacing: .1px;
+    padding: 0.5rem 1rem;
+    padding-right: calc(1rem - 5px);
+    transition: 0.3s;
+    /* cursor: pointer; */
+}
+
+nav h1:hover {
+    color: white;
+    text-shadow: 5px black;
+}
+
+.menu,
+.menu-button {
+    /* display: none; */
+    align-items: center;
+    margin: 0 -1rem;
+}
+
+.menu-button {
+    background-color: #fbdedb;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+}
+
+.menu a,
+.menu-button a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: white;
+    font-weight: 400;
+}
+
+.menu-button a:hover {
+    color: olive;
+    font-weight: 400;
 }
