@@ -9,8 +9,8 @@
     <meta name="keywords" content="Decorating with Flowers, Home Lighting, Home Design, Interior Designs">
     <meta name="author" content="Tubi Obaloluwa">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/b68be37945.js" crossorigin="anonymous"></script>
     <title>Synterior | About Us</title>
 </head>
@@ -30,12 +30,22 @@
                     <a href="aboutUs.html" class="current">About Us</a>
                 </div>
 
-                <div class="rightnav">
-                    <button><a href="login.html">Sign In</a></button>
-                    <i class=" fas fa-duotone fa-bars hamburger" aria-hidden="true"></i>
-                </div>
+                <button><a href="login.html">Sign In</a></button>
+                <button class="hamburger">
+                        <span class="material-icons">menu</span>
+                </button>
             </div>
         </nav>
+
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Our Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="aboutUs.html" class="current">About Us</a>
+        </div>
+
+        <button><a href="login.html">Sign In</a></button>
     </header>
 
     <main>
@@ -121,6 +131,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
