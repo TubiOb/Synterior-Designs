@@ -40,7 +40,7 @@
     
     nav h1:hover {
         color: white;
-        text-shadow: .6px .6px black;
+        /* text-shadow: .6px .6px black; */
         font-weight: bold;
     }
     
@@ -470,6 +470,14 @@
         text-align: center;
     }
     
+    .residence {
+        background-color: #e7d8c9;
+    }
+    
+    .retail {
+        background-color: #e7d8c9;
+    }
+    
     .residence i,
     .commerce i,
     .retail i {
@@ -509,7 +517,8 @@
         font-size: 11px;
         padding: 2px 5px;
         align-self: center;
-        background-color: #fec89a;
+        background-color: #fbdedb;
+        /* background-color: #fec89a; */
         padding: 5px 10px;
         border: none;
         border-top-left-radius: 10px;
@@ -746,5 +755,28 @@
         }
         article.serve p {
             font-size: 14px;
+        }
+        .style {
+            width: 80%;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            display: grid;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            place-items: center;
+        }
+        .coverAll {
+            width: 60%;
+            height: 180px;
+            margin-bottom: 10px;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid gold;
         }
     }
