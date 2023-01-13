@@ -527,13 +527,16 @@
     
     .style {
         width: 100%;
-        margin: auto;
+        margin: 20px auto;
         justify-content: center;
         align-items: center;
         overflow: hidden;
         position: relative;
-        display: block;
+        display: grid;
+        /* gap: 10px; */
         /* text-align: center; */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px;
         border: 1px solid purple;
     }
     
@@ -543,12 +546,13 @@
         /* font-weight: bold; */
         text-align: start;
         margin-left: 10px;
+        align-self: flex-start;
     }
     
     .coverAll {
         width: 60%;
         height: 180px;
-        margin-left: auto;
+        /* margin-left: auto;
         margin-right: auto;
         margin-bottom: 10px;
         justify-content: center;
@@ -556,13 +560,17 @@
         overflow: hidden;
         position: relative;
         display: block;
-        text-align: center;
+        text-align: center; */
+        margin: 20px auto;
+        display: grid;
+        gap: 10px;
         border: 1px solid gold;
     }
     
     .coverAll img {
         width: 130px;
         height: 130px;
+        object-fit: cover;
         margin: 10px auto;
         border-radius: 50%;
     }
@@ -763,20 +771,28 @@
             align-items: center;
             overflow: hidden;
             position: relative;
-            display: grid;
-            flex-direction: row;
-            flex-wrap: wrap;
-            text-align: center;
-            place-items: center;
+            display: flex;
+        }
+        .style h3 {
+            /* text-align: start; */
+            font-size: 16px;
+            margin-left: 10px;
+            /* align-self: flex-start; */
         }
         .coverAll {
-            width: 60%;
+            /* width: 60%;
             height: 180px;
             margin-bottom: 10px;
             justify-content: center;
             align-items: center;
             overflow: hidden;
             position: relative;
-            border: 1px solid gold;
+            border: 1px solid gold; */
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            display: grid;
+            /* grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100px; */
         }
     }
