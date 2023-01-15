@@ -29,17 +29,19 @@
         padding: 1rem 1.5rem;
     }
     
-    nav h1 {
+    nav h1>a {
         font-family: 'Satisfy', cursive;
         letter-spacing: 0px;
         padding: 0.5rem 1rem;
         padding-right: calc(1rem - 3px);
         transition: 0.3s;
         font-weight: normal;
+        text-decoration: none;
+        color: black;
     }
     
-    nav h1:hover {
-        color: white;
+    nav h1>a:hover {
+        color: black;
         /* text-shadow: .6px .6px black; */
         font-weight: bold;
     }
@@ -580,6 +582,22 @@
         display: grid;
         gap: 10px;
         border: 1px solid lawngreen;
+    }
+    
+    .present .small h4 {
+        text-align: center;
+    }
+    
+    .present .small .image-container {
+        margin: auto;
+    }
+    
+    .present .small .image-container img {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        margin: 10px auto;
+        border-radius: 50%;
     }
     /* Media Queries */
     
