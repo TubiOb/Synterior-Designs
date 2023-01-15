@@ -580,6 +580,41 @@
         margin: 10px auto;
         border-radius: 50%;
     }
+    /* PORTFOLIO PAGE */
+    
+    main p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .residential {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .residential .image-container {
+        position: absolute;
+        width: 100%;
+        animation: fade 2s infinite;
+    }
+    
+    @keyframes fade {
+        0% {
+            opacity: 1;
+        }
+        33.333% {
+            opacity: 0;
+        }
+        66.666% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
     /* Media Queries */
     
     @media (min-width: 760px) {
