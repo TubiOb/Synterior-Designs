@@ -67,13 +67,13 @@ for (var i = 0; i < slideGroups.length; i++) {
     var slideGroup = slideGroups[i];
     var slideInterval = slideGroup.getAttribute("data-interval") || 6000; // set default interval to 2s
     setInterval(function() {
-        showSlides(slideGroups);
+        showSlides(slideGroup);
     }, slideInterval);
 }
 
-function showSlides(slideGroups) {
+function showSlides(slideGroup) {
     var i;
-    var slides = slideGroups.getElementsByClassName("mySlides");
+    var slides = slideGroup.getElementsByClassName("mySlides");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
