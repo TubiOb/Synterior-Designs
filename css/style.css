@@ -609,55 +609,81 @@ main p {
     position: relative;
 }
 
+#residential h2 {
+    margin-left: 20px;
+}
+
 #residential .small {
     width: 90%;
-    /* justify-content: center;
-        align-items: center; */
+    height: 300px;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     position: relative;
     margin: 20px auto;
     border: 2px solid #718f94;
 }
 
-#residential .image-container {
+#residential .small .image-container {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 100%;
+    border: 1px solid darkgoldenrod;
+    /* height: 200px; */
     /* display: none; */
     /* animation: fade 2s infinite; */
 }
 
-#residential .small .image-container #image1,
-#residential .small .image-container #image2 {
+#residential .small .image-container .mySlides {
+    /* position: absolute; */
     width: 100%;
+    height: 100%;
+    /* object-fit: cover;
+    filter: blur(0px);
+    transition: filter 0.5s ease-in-out;
+    border: 1px solid darkslategray; */
+}
+
+#residential .small .image-container #image1,
+#residential .small .image-container #image3,
+#residential .small .image-container #image5,
+#residential .small .image-container #image7 {
     position: absolute;
-    animation: fade 6s infinite;
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+    filter: blur(0px);
+    transition: filter 0.5s ease-in-out;
+    animation: fade 7s infinite;
 }
 
 .image-text {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    bottom: 60px;
+    left: 26px;
     color: white;
-    font-size: 20px;
-    /* font-weight: bold; */
-    /* text-shadow: 1px 1px #000; */
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 1px 1px #000;
     visibility: hidden;
+    transition: all 0.3s linear;
+    /* opacity: 0; */
 }
 
-.small .image-container img:hover {
+#residential .small .image-container:hover .mySlides {
     filter: blur(3px);
 }
 
-.small .image-container img:hover .image-text {
+#residential .small .image-container:hover .image-text {
     visibility: visible;
+    /* opacity: 1;
+    filter: blur(0px); */
 }
 
-
-/* .fade {
-        animation-name: fade;
-        animation-duration: 2.5s;
-    } */
+.fade {
+    animation-name: fade;
+    animation-duration: 3.5s;
+}
 
 @keyframes fade {
     0% {
@@ -857,7 +883,20 @@ main p {
     article.serve p {
         font-size: 14px;
     }
-    #residential .image-container {
+    #residential .small {
+        height: 820px;
+        margin: 40px auto;
+    }
+    #residential h2 {
+        font-size: 18px;
+        margin-left: 0px;
+    }
+    /* #residential .image-container {
         height: 600px;
+    } */
+    .image-text {
+        font-size: 17px;
+        width: 700px;
+        margin-left: 20px;
     }
 }
