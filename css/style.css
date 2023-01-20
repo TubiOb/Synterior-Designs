@@ -601,7 +601,9 @@ main p {
     margin-bottom: 10px;
 }
 
-#residential {
+#residential,
+#commercial,
+#retail {
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -609,11 +611,15 @@ main p {
     position: relative;
 }
 
-#residential h2 {
+#residential h2,
+#commercial h2,
+#retail h2 {
     margin-left: 20px;
 }
 
-#residential .small {
+#residential .small,
+#commercial .small,
+#retail .small {
     width: 90%;
     height: 300px;
     justify-content: center;
@@ -624,7 +630,9 @@ main p {
     border: 2px solid #718f94;
 }
 
-#residential .small .image-container {
+#residential .small .image-container,
+#commercial .small .image-container,
+#retail .small .image-container {
     position: relative;
     width: 100%;
     height: 100%;
@@ -634,7 +642,9 @@ main p {
     /* animation: fade 2s infinite; */
 }
 
-#residential .small .image-container .mySlides {
+#residential .small .image-container .mySlides,
+#commercial .small .image-container .mySlides,
+#retail .small .image-container .mySlides {
     /* position: absolute; */
     width: 100%;
     height: 100%;
@@ -647,7 +657,15 @@ main p {
 #residential .small .image-container #image1,
 #residential .small .image-container #image3,
 #residential .small .image-container #image5,
-#residential .small .image-container #image7 {
+#residential .small .image-container #image7,
+#commercial .small .image-container #image9,
+#commercial .small .image-container #image11,
+#commercial .small .image-container #image13,
+#commercial .small .image-container #image15,
+#retail .small .image-container #image17,
+#retail .small .image-container #image19,
+#retail .small .image-container #image21,
+#retail .small .image-container #image23 {
     position: absolute;
     /* width: 100%;
     height: 100%; */
@@ -670,11 +688,15 @@ main p {
     /* opacity: 0; */
 }
 
-#residential .small .image-container:hover .mySlides {
+#residential .small .image-container:hover .mySlides,
+#commercial .small .image-container:hover .mySlides,
+#retail .small .image-container:hover .mySlides {
     filter: blur(3px);
 }
 
-#residential .small .image-container:hover .image-text {
+#residential .small .image-container:hover .image-text,
+#commercial .small .image-container:hover .image-text,
+#retail .small .image-container:hover .image-text {
     visibility: visible;
     /* opacity: 1;
     filter: blur(0px); */
@@ -887,9 +909,11 @@ main p {
         height: 820px;
         margin: 40px auto;
     }
-    #residential h2 {
+    #residential h2,
+    #commercial h2,
+    #retail h2 {
         font-size: 18px;
-        margin-left: 0px;
+        margin-left: 40px;
     }
     /* #residential .image-container {
         height: 600px;
