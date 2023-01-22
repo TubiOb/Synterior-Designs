@@ -705,6 +705,14 @@ main p {
     }
 }
 
+.testimonies {
+    width: 80%;
+    margin: 15px auto;
+    height: 400px;
+    text-align: center;
+    border: 1px solid darkblue;
+}
+
 
 /* Media Queries */
 
