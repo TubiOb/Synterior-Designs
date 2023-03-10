@@ -9,6 +9,10 @@ body {
     background-color: #e8d7d1;
 }
 
+a {
+    text-decoration: none;
+}
+
 i {
     margin: 5px;
 }
@@ -29,7 +33,7 @@ nav {
     padding: 1rem 1.5rem;
 }
 
-nav h1>a {
+nav a {
     font-family: 'Satisfy', cursive;
     letter-spacing: 0px;
     padding: 0.5rem 1rem;
@@ -40,7 +44,7 @@ nav h1>a {
     color: black;
 }
 
-nav h1>a:hover {
+nav a:hover {
     color: black;
     /* text-shadow: .6px .6px black; */
     font-weight: bold;
@@ -203,11 +207,14 @@ h3 {
     overflow: hidden;
     display: block;
     text-align: center;
+    padding: 10px;
 }
 
 .welcome .image-container {
     max-width: 100%;
     position: relative;
+    padding: 10px auto;
+    margin-top: 20px;
 }
 
 .welcome aside.sidebar {
@@ -229,6 +236,7 @@ h3 {
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -242,18 +250,19 @@ h3 {
 #about {
     position: relative;
     width: 80%;
-    margin: auto;
+    margin: 2rem auto;
     justify-content: center;
     align-content: center;
     overflow: hidden;
     display: block;
-    padding: 10px;
+    padding: 2rem 10px;
 }
 
 #about p {
     margin-top: 5px;
     margin-bottom: 15px;
     font-size: 13px;
+    line-height: .9rem;
 }
 
 #about .shapes {
@@ -307,18 +316,20 @@ h3 {
     align-content: center;
     overflow: hidden;
     display: flexbox;
-    padding: 10px;
+    padding: 2rem 10px;
 }
 
 #contact h5 {
     margin-left: 20px;
     font-size: 14px;
     font-weight: bold;
+    line-height: 1rem;
 }
 
 #contact i {
     font-size: 13px;
     display: block;
+    line-height: 1.5rem;
 }
 
 #contact i>p {
